@@ -1,0 +1,15 @@
+C:\Users\Dawan\source\repos\FormationWpfMai\Exo01\bin\Debug\Exo01.exe.config
+C:\Users\Dawan\source\repos\FormationWpfMai\Exo01\bin\Debug\Exo01.exe
+C:\Users\Dawan\source\repos\FormationWpfMai\Exo01\bin\Debug\Exo01.pdb
+C:\Users\Dawan\source\repos\FormationWpfMai\Exo01\obj\Debug\Exo01.csprojAssemblyReference.cache
+C:\Users\Dawan\source\repos\FormationWpfMai\Exo01\obj\Debug\MainWindow.g.cs
+C:\Users\Dawan\source\repos\FormationWpfMai\Exo01\obj\Debug\App.g.cs
+C:\Users\Dawan\source\repos\FormationWpfMai\Exo01\obj\Debug\Exo01_MarkupCompile.cache
+C:\Users\Dawan\source\repos\FormationWpfMai\Exo01\obj\Debug\Exo01_MarkupCompile.lref
+C:\Users\Dawan\source\repos\FormationWpfMai\Exo01\obj\Debug\MainWindow.baml
+C:\Users\Dawan\source\repos\FormationWpfMai\Exo01\obj\Debug\Exo01.g.resources
+C:\Users\Dawan\source\repos\FormationWpfMai\Exo01\obj\Debug\Exo01.Properties.Resources.resources
+C:\Users\Dawan\source\repos\FormationWpfMai\Exo01\obj\Debug\Exo01.csproj.GenerateResource.cache
+C:\Users\Dawan\source\repos\FormationWpfMai\Exo01\obj\Debug\Exo01.csproj.CoreCompileInputs.cache
+C:\Users\Dawan\source\repos\FormationWpfMai\Exo01\obj\Debug\Exo01.exe
+C:\Users\Dawan\source\repos\FormationWpfMai\Exo01\obj\Debug\Exo01.pdb
