@@ -5,11 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Revision"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="300">
     <StackPanel>
 
-        <Label>Nom : </Label><TextBlock Text="{Binding Nom}"/>
-        <Label>Prénom : </Label><TextBlock Text="{Binding Prenom}"/>
+        <ComboBox Name="noms">
+            <ComboBoxItem>toto</ComboBoxItem> <!-- Bleu-->
+            <ComboBoxItem>titi</ComboBoxItem> <!-- Jaune-->
+            <ComboBoxItem>tata</ComboBoxItem> <!-- Rouge-->
+        </ComboBox>
+
+        <DatePicker Name="date" />
+
+        <TextBox Name="motif"/>
+
+        <Button Click="envoyerInformations">Envoyer</Button>
+
+        <TextBlock Style="{StaticResource textBold}" TextWrapping="Wrap" Name="result" Text="Resultat formulaire" Margin="0, 50"/>
+
+        <Label>Vert : </Label>
+        <CheckBox Name="vert"/>
+        <Label>Jaune :</Label>
+        <CheckBox Name="jaune"/>
+
+
+        <TextBlock TextWrapping="Wrap" Text="Tout le monde" Margin="0, 50">
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=vert, Path=IsChecked}" Value="True">
+                            <Setter Property="Foreground" Value="Green"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
 
     </StackPanel>
 </Window>

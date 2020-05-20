@@ -13,3 +13,4 @@ C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\Revi
 C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\Revision.csproj.CoreCompileInputs.cache
 C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\Revision.exe
 C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\Revision.pdb
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\App.baml

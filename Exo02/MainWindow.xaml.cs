@@ -21,7 +21,6 @@ namespace Exo02
     public partial class MainWindow : Window
     {
         private List<Contact> contacts;
-        private Contact nextContact;
 
 
         public MainWindow()
@@ -29,24 +28,15 @@ namespace Exo02
             InitializeComponent();
 
             contacts = ContactManager.chargerContacts();
-            nextContact = contacts.First();
+
+            this.DataContext = contacts.First();
         }
 
         private void afficherContact(object sender, RoutedEventArgs args)
         {
-            NomValue.Content = nextContact.Nom;
-            PrenomValue.Content = nextContact.prenom;
-            DateNaissanceValue.Content = nextContact.dateNaissance.ToString();
+            contacts.Remove((Contact) this.DataContext);
 
-            Roles.Items.Clear();
-            foreach(String role in nextContact.roles)
-            {
-                Roles.Items.Add(role);
-            }
-
-            contacts.Remove(nextContact);
-
-            nextContact = contacts.Count == 0 ? null : contacts.First();
+            this.DataContext = contacts.FirstOrDefault();
         }
 
         private void ButtonNewContact_Click(object sender, RoutedEventArgs e)

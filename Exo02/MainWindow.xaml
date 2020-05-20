@@ -51,18 +51,32 @@
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
+                        <RowDefinition/>
                     </Grid.RowDefinitions>
 
                     <Label Grid.Column="0" Grid.Row="0">Nom :</Label>
-                    <Label Grid.Column="1" Grid.Row="0" Name="NomValue">XXXXX</Label>
+                    <Label Grid.Column="1" Grid.Row="0" Name="NomValue" Content="{Binding Nom}"></Label>
 
                     <Label Grid.Column="0" Grid.Row="1">Prénom :</Label>
-                    <Label Grid.Column="1" Grid.Row="1" Name="PrenomValue">XXXXX</Label>
+                    <Label Grid.Column="1" Grid.Row="1" Name="PrenomValue" Content="{Binding Prenom}"></Label>
 
                     <Label Grid.Column="0" Grid.Row="2">Date naissance :</Label>
-                    <Label Grid.Column="1" Grid.Row="2" Name="DateNaissanceValue">XXXXX</Label>
+                    <Label Grid.Column="1" Grid.Row="2" Name="DateNaissanceValue" Content="{Binding DateNaissance}"></Label>
 
-                    <ListBox Name="Roles" Grid.Column="2" Grid.Row="0" Grid.RowSpan="3" Margin="10">
+                    <Label Grid.Column="0" Grid.Row="3">Email :</Label>
+                    <Label Grid.Column="1" Grid.Row="3" Content="{Binding Email}">
+                        <Label.Style>
+                            <Style TargetType="Label">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsEmailValid}" Value="False">
+                                        <Setter Property="Foreground" Value="Red"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Label.Style>
+                    </Label>
+                    
+                    <ListBox Name="Roles"  ItemsSource="{Binding Roles}"  Grid.Column="2" Grid.Row="0" Grid.RowSpan="3" Margin="10">
                     </ListBox>
 
                 </Grid>

@@ -4,6 +4,16 @@
              xmlns:local="clr-namespace:Revision"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+
+        <Style x:Key="textBold" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="Red"/>
+                </Trigger>
+            </Style.Triggers>
+            
+        </Style>
          
     </Application.Resources>
 </Application>

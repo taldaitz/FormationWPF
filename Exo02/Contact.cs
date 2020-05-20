@@ -8,19 +8,29 @@ namespace Exo02
 {
     class Contact
     {
-        public String prenom;
-        public String Nom;
-        public DateTime? dateNaissance;
-        public bool? actif;
-        public List<String> roles;
+        public String Prenom { get; set; }
+        public String Nom { get; set; }
+        public DateTime? DateNaissance { get; set; }
+        public bool? Actif { get; set; }
+        public String Email { get; set; }
+        public List<String> Roles { get; set; }
 
-        public Contact(string prenom, string nom, DateTime? dateNaissance, bool? actif, List<string> roles)
+        public bool IsEmailValid
         {
-            this.prenom = prenom;
+            get
+            {
+                return Email.Contains("@");
+            }
+        }
+
+        public Contact(string prenom, string nom, string email, DateTime? dateNaissance, bool? actif, List<string> roles)
+        {
+            this.Prenom = prenom;
             Nom = nom;
-            this.dateNaissance = dateNaissance;
-            this.actif = actif;
-            this.roles = roles;
+            this.DateNaissance = dateNaissance;
+            this.Actif = actif;
+            this.Roles = roles;
+            this.Email = email;
         }
     }
 }

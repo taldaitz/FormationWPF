@@ -34,6 +34,7 @@ namespace Exo02
 
             String prenom = tbPrenom.Text;
             String nom = tbNom.Text;
+            String email = tbEmail.Text;
             DateTime? dateNaissance = dpDateNaissance.SelectedDate;
             bool? actif = cbActif.IsChecked;
 
@@ -45,10 +46,11 @@ namespace Exo02
             }
 
 
-            ContactManager.creerContact(prenom, nom, dateNaissance, actif, roles);
+            ContactManager.creerContact(prenom, nom, email, dateNaissance, actif, roles);
 
 
             tbNom.Clear();
+            tbEmail.Clear();
             tbPrenom.Clear();
             lbRole.UnselectAll();
             cbActif.IsChecked = null;

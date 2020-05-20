@@ -23,8 +23,32 @@ namespace Revision
         public MainWindow()
         {
             InitializeComponent();
+        }
 
-            this.DataContext = new Person() { Nom = "Toto", Prenom = "Titi" };
+        private void envoyerInformations(object sender, RoutedEventArgs e)
+        {
+            String nom = (String)((ComboBoxItem)noms.SelectedItem).Content;
+            DateTime selectedDate = date.SelectedDate == null ? DateTime.Now : (DateTime)date.SelectedDate;
+            String selectedMotif = motif.Text;
+
+            result.Text = String.Format("{0} a choisi la date du {1} pour la raison de {2}.", 
+                                                nom, selectedDate, selectedMotif);
+
+
+            switch(nom)
+            {
+                case "toto":
+                    result.Background = Brushes.Blue;
+                    break;
+
+                case "titi":
+                    result.Background = Brushes.Yellow;
+                    break;
+
+                case "tata":
+                    result.Background = Brushes.Red;
+                    break;
+            }
         }
     }
 }
