@@ -6,6 +6,20 @@
         xmlns:local="clr-namespace:Exo02"
         mc:Ignorable="d"
         Title="MainWindow" Height="353.149" Width="831.89" MinWidth="600">
+
+    <Window.Resources>
+
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Green"/>
+        </Style>
+
+        <Style x:Key="Danger" TargetType="Button">
+            <Setter Property="Background" Value="Red"/>
+        </Style>
+
+    </Window.Resources>
+    
+        
     <Grid Margin="50">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -20,7 +34,8 @@
 
         <StackPanel Grid.Column="1">
 
-            <Button Name="button1"  Margin="50, 0, 50, 20" MinWidth="200" Click="afficherContact">Afficher Suivant</Button>
+            <Button Name="buttonNewContact"  Margin="50, 0, 50, 20" MinWidth="200" Click="ButtonNewContact_Click">X</Button>
+            <Button Name="button1" Style="{StaticResource Danger}" Margin="50, 0, 50, 20" MinWidth="200" Click="afficherContact">Afficher Suivant</Button>
 
             <Border  BorderBrush="Black" BorderThickness="1">
 

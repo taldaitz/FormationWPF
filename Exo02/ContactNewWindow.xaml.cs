@@ -20,7 +20,11 @@ namespace Exo02
     /// </summary>
     public partial class ContactNewWindow : Window
     {
-        public ContactNewWindow()
+
+        private static ContactNewWindow instance;
+
+
+        private ContactNewWindow()
         {
             InitializeComponent();
         }
@@ -48,6 +52,27 @@ namespace Exo02
             tbPrenom.Clear();
             lbRole.UnselectAll();
             cbActif.IsChecked = null;
+        }
+
+        public static ContactNewWindow getInstance()
+        {
+            if(instance == null)
+            {
+                instance = new ContactNewWindow();
+            }
+            return instance;
+        }
+
+        public static void deleteInstance()
+        {
+            instance = null;
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            ContactNewWindow.deleteInstance();
+
         }
     }
 }

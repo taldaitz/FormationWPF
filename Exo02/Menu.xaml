@@ -6,10 +6,29 @@
         xmlns:local="clr-namespace:Exo02"
         mc:Ignorable="d"
         Title="Menu" Height="200" Width="300">
+    <Window.Resources>
+        <Style x:Key="buttonHover" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" Background="{TemplateBinding Background}" BorderBrush="Black" BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Yellow"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
     <StackPanel>
 
-        <Button Click="AfficherNewContact">Créer Contact</Button>
-        <Button Click="AfficherVoirContact">Voir les Contacts</Button>
+        <Button Click="AfficherNewContact" Style="{StaticResource buttonHover}">Créer Contact</Button>
+        <Button Click="AfficherVoirContact" Style="{StaticResource buttonHover}">Voir les Contacts</Button>
         
     </StackPanel>
 </Window>

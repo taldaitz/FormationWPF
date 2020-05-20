@@ -26,14 +26,14 @@ namespace Exo02
 
         private void AfficherNewContact(object sender, RoutedEventArgs e)
         {
-            ContactNewWindow newContact = new ContactNewWindow();
+            ContactNewWindow newContact = ContactNewWindow.getInstance();
             newContact.Show();
         }
 
         private void AfficherVoirContact(object sender, RoutedEventArgs e)
         {
             MainWindow voirContact = new MainWindow();
-            voirContact.Show();
+            voirContact.ShowDialog();
         }
     }
 }

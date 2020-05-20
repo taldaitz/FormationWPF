@@ -48,5 +48,11 @@ namespace Exo02
 
             nextContact = contacts.Count == 0 ? null : contacts.First();
         }
+
+        private void ButtonNewContact_Click(object sender, RoutedEventArgs e)
+        {
+            ContactNewWindow window = ContactNewWindow.getInstance();
+            window.Show();
+        }
     }
 }
