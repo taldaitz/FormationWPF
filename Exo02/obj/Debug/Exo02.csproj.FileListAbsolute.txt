@@ -37,3 +37,5 @@ C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Exo02\obj\Debug\Exo02.c
 C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Exo02\obj\Debug\Exo02.exe
 C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Exo02\obj\Debug\Exo02.pdb
 C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Exo02\obj\Debug\App.baml
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Exo02\obj\Debug\ListContacts.g.cs
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Exo02\obj\Debug\ListContacts.baml

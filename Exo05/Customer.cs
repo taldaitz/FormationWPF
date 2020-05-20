@@ -13,6 +13,14 @@ namespace Exo05
         public String Email { get; set; }
         public int Age { get; set; }
 
+        public String AgeSaisie
+        {
+            set
+            {
+                Age = int.Parse(value);
+            }
+        }
+
         public bool IsEmailValid
         {
             get

@@ -15,11 +15,28 @@ namespace Exo02
         public String Email { get; set; }
         public List<String> Roles { get; set; }
 
+
         public bool IsEmailValid
         {
             get
             {
                 return Email.Contains("@");
+            }
+        }
+
+        public String DateNaissanceForDisplay
+        {
+            get
+            {
+                return ((DateTime)DateNaissance).ToString("dd/MM/yyyy");
+            }
+        }
+
+        public String RolesForDisplay
+        {
+            get
+            {
+                return String.Join(" | ", Roles);
             }
         }
 

@@ -1,0 +1,36 @@
+﻿<Window x:Class="Exo02.ListContacts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exo02"
+        mc:Ignorable="d"
+        Title="ListContacts" Height="250" Width="600">
+    <StackPanel>
+
+        <DataGrid Name="listContactGrid" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Prénom" Binding="{Binding Prenom}"/>
+                <DataGridTextColumn Header="Nom" Binding="{Binding Nom}"/>
+                <DataGridTextColumn Header="Date de naissance" Binding="{Binding DateNaissanceForDisplay}"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
+                <DataGridTextColumn Header="Roles" Binding="{Binding RolesForDisplay}"/>
+                <DataGridCheckBoxColumn Header="est Actif" Binding="{Binding Actif}"/>
+            </DataGrid.Columns>
+
+
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Actif}" Value="False">
+                            <Setter Property="Background" Value="LightGray"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
+            
+        </DataGrid>
+        
+        
+    </StackPanel>
+</Window>
