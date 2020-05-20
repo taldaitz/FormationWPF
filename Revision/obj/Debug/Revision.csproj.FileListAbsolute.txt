@@ -1,0 +1,15 @@
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\bin\Debug\Revision.exe.config
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\bin\Debug\Revision.exe
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\bin\Debug\Revision.pdb
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\Revision.csprojAssemblyReference.cache
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\MainWindow.g.cs
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\App.g.cs
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\Revision_MarkupCompile.cache
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\Revision_MarkupCompile.lref
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\MainWindow.baml
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\Revision.g.resources
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\Revision.Properties.Resources.resources
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\Revision.csproj.GenerateResource.cache
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\Revision.csproj.CoreCompileInputs.cache
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\Revision.exe
+C:\Users\Dawan\source\repos\FormationWpfMai\FormationWPF\Revision\obj\Debug\Revision.pdb
